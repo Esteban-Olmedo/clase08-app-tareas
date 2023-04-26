@@ -15,7 +15,8 @@ const borrar = (titulo) => {
     });
     const tareasRestantes = JSON.stringify(tareaBorrada)
     fs.writeFileSync("./data.json", tareasRestantes)
-    return tareaBorrada
+    //return tareaBorrada;
+    return console.log(tareaBorrada, "borrado con exito")
 }
 
 module.exports = { borrar }

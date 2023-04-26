@@ -2,6 +2,7 @@ const { read } = require("./CRUD/read")
 const { create } = require("./CRUD/create")
 const { borrar } = require("./CRUD/delete")
 const { buscar } = require("./CRUD/return")
+const { update } = require("./CRUD/update")
 
 const data = process.argv;
 
@@ -16,10 +17,15 @@ const comand = (comando, param1, param2) => {
             create(param1, param2) //funcion para crear una tarea
             break;
         case "delete":
-            console.log(borrar())
+            borrar(param1)
+            //console.log(borrar(param1))
             break;
         case "return":
-            console.log(buscar())
+            //console.log(buscar(param1))
+            buscar(param1)
+            break;
+        case "update":
+            update(param1, param2)
             break;
         default:
             console.log("no se encontro ningun comando que coincida");

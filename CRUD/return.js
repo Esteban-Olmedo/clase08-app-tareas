@@ -11,7 +11,7 @@ const buscar = (titulo) => {
     if (!tareaBuscada) {
         return "no se encontraron resultados"
     }
-    return tareaBuscada
+    return console.log(tareaBuscada)
 }
 
 module.exports = { buscar }
