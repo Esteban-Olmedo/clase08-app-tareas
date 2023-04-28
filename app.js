@@ -3,6 +3,7 @@ const { create } = require("./CRUD/create")
 const { borrar } = require("./CRUD/delete")
 const { buscar } = require("./CRUD/return")
 const { update } = require("./CRUD/update")
+const {find} = require("./CRUD/find")
 
 const data = process.argv;
 
@@ -26,6 +27,9 @@ const comand = (comando, param1, param2) => {
             break;
         case "update":
             update(param1, param2)
+            break;
+        case "find":
+            console.log(find(param1))
             break;
         default:
             console.log("no se encontro ningun comando que coincida");
