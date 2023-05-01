@@ -3,7 +3,9 @@ const { create } = require("./CRUD/create")
 const { borrar } = require("./CRUD/delete")
 const { buscar } = require("./CRUD/return")
 const { update } = require("./CRUD/update")
-const {find} = require("./CRUD/find")
+const { find } = require("./CRUD/find")
+const { list } = require("./CRUD/list")
+const { filter } = require("./CRUD/filter")
 
 const data = process.argv;
 
@@ -30,6 +32,12 @@ const comand = (comando, param1, param2) => {
             break;
         case "find":
             console.log(find(param1))
+            break;
+        case "list":
+            console.log(list())
+            break;
+        case "filter":
+            filter(param1)
             break;
         default:
             console.log("no se encontro ningun comando que coincida");

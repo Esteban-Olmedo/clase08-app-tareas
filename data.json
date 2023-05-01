@@ -1,1 +1,22 @@
-[{"titulo":"pasear perro","descripcion":"todos los dias"},{"titulo":"sacar basura","descripcion":"a la noche"},{"titulo":"hacer tp1","descripcion":"para el jueves 27"},{"titulo":"tarea 4","descripcion":"actual"}]
+[
+    {
+        "titulo": "pasear perro",
+        "descripcion": "todos los dias"
+    },
+    {
+        "titulo": "sacar basura",
+        "descripcion": "a la noche"
+    },
+    {
+        "titulo": "hacer tp1",
+        "descripcion": "para el jueves 27"
+    },
+    {
+        "titulo": "tarea 4",
+        "descripcion": "actual"
+    },
+    {
+        "titulo": "hacer tp2",
+        "descripcion": "para el martes"
+    }
+]
